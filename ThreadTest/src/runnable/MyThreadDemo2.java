@@ -11,6 +11,7 @@ public class MyThreadDemo2 {
 		
 		//当对象对方法仅进行一次调用的时候，就可以简化成匿名对象
 		//匿名对象可以作为实际参数进行传递
+		//优化代码
 		new Thread(new Runnable() {
 
 			@Override
