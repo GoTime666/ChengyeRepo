@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 
-public class ThreadDemo3 {
+public class ThreadDemoRunnable {
 	public static void main(String[] args) {
 		ExecutorService service = Executors.newFixedThreadPool(4);
 		// MyRunnable r=new MyRunnable();
