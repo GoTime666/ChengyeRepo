@@ -15,8 +15,9 @@ public class ThreadDemo3 {
 		service.submit(r);
 		service.submit(r);
 		
-		MyCallable c=new MyCallable();
-		 
+		
+		
+		
 	}
 	
 	
