@@ -7,8 +7,10 @@ public class TicketSafeSynchronizedFunction extends Ticket{
 		// TODO Auto-generated method stub
 		while(true) {
 			method();
-			if(ticket==1)
-				return;
+			if(ticket==0)
+				break;
+				//循环里return跳出方法没跳出循环
+				//return;
 		}
 	}
 	
