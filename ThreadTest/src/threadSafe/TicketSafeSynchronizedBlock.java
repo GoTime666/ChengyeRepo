@@ -1,6 +1,6 @@
 package threadSafe;
 
-public class TicketSafe extends Ticket {
+public class TicketSafeSynchronizedBlock extends Ticket {
 
 	@Override
 	public void run() {
