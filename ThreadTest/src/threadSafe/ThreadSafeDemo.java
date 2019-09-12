@@ -8,13 +8,13 @@ public class ThreadSafeDemo {
 		// Ticket ticket = new TicketNotSafe();
 
 		// 线程安全
-		// Ticket ticket = new TicketSafeSynchronizedBlock();
+		 Ticket ticket = new TicketSafeSynchronizedBlock();
 
 		// 线程安全
 		//Ticket ticket = new TicketSafeSynchronizedFunction();
 		
 		//Lock接口
-		Ticket ticket = new LockTicket();
+		//Ticket ticket = new LockTicket();
 
 		Thread t1 = new Thread(ticket, "窗口1");
 		Thread t2 = new Thread(ticket, "窗口2");

@@ -8,6 +8,7 @@ public class MyThread1 extends Thread{
 		//super.run();
 		for(int i=1;i<100;i++)
 			System.out.println(currentThread().getName()+"     "+i);
+		Thread.yield();
 	}
 	
 	public MyThread1(String name) {

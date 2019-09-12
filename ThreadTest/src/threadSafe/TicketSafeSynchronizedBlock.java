@@ -16,7 +16,7 @@ public class TicketSafeSynchronizedBlock extends Ticket {
 				System.out.println(Thread.currentThread().getName() + "正在卖票:" + ticket--);
 			}
 		}
-
+		Thread.yield();
 	}
 
 }
