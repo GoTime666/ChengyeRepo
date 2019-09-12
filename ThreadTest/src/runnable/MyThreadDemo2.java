@@ -1,5 +1,6 @@
 package runnable;
 
+
 public class MyThreadDemo2 {
 	public static void main(String[] args) {
 		Runnable r1 = new MyRunnable();
@@ -24,5 +25,6 @@ public class MyThreadDemo2 {
 		
 		for (int i = 1; i < 100; i++)
 			System.out.println("主线程:   " + i);
+		
 	}
 }

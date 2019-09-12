@@ -3,10 +3,11 @@ package callableAndThreadpool;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.FutureTask;
 
 public class ThreadDemoCallable {
 	public static  void main(String[] args) {
-		ExecutorService service=Executors.newFixedThreadPool(2);
+		ExecutorService service=Executors.newFixedThreadPool(4);
 		Callable<Object> c=new Callable<Object>() {
 
 			@Override
@@ -19,7 +20,9 @@ public class ThreadDemoCallable {
 				return null;
 			}
 		};
-		service.submit(c);
+		FutureTask<Object> futureTask = new FutureTask<Object>(c);
+		
+		service.submit(futureTask);
 		service.submit(c);
 		service.submit(c);
 		service.submit(c);

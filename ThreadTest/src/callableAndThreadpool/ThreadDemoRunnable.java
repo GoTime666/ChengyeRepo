@@ -1,9 +1,7 @@
 package callableAndThreadpool;
 
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 
 public class ThreadDemoRunnable {
 	public static void main(String[] args) {
@@ -24,7 +22,7 @@ public class ThreadDemoRunnable {
 		service.submit(r);
 
 		// 关闭线程池
-		// service.shutdown();
+		service.shutdown();
 
 	}
 
