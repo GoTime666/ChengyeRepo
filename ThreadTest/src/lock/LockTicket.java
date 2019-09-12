@@ -3,7 +3,9 @@ package lock;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Ticket implements Runnable {
+import threadSafe.Ticket;
+
+public class LockTicket extends Ticket {
 
 	/*
 	 * public static void main(String[] args) { int i=0; while(true) {
