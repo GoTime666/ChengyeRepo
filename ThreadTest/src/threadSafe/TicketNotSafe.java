@@ -1,8 +1,6 @@
 package threadSafe;
 
-public class TicketNotSafe implements Runnable {
-
-	Integer ticket = 100;
+public class TicketNotSafe extends Ticket {
 
 	@Override
 	public void run() {
