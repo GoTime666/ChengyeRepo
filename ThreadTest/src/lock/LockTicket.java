@@ -30,6 +30,8 @@ public class LockTicket extends Ticket {
 					e.printStackTrace();
 				}
 				System.out.println(Thread.currentThread().getName()+"正在卖票:"+ticket--);
+			}else {
+				break;
 			}
 			ck.unlock();
 		}
