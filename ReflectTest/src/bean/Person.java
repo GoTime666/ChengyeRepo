@@ -4,6 +4,8 @@ public class Person {
 	public String name;
 	public int age;
 	private String address;
+	int a;
+	protected int b;
 
 	public Person() {
 		System.out.println("空参数构造方法");
@@ -52,6 +54,10 @@ public class Person {
 
 	private void method5() {
 		System.out.println("私有方法");
+	}
+	
+	public void getMethod5() {
+		method5();
 	}
 
 	@Override
