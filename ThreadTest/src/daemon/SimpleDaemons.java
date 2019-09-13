@@ -20,7 +20,7 @@ public class SimpleDaemons implements Runnable{
 		// TODO Auto-generated method stub
 		while(true) {
 			try {
-				TimeUnit.MILLISECONDS.sleep(233);
+				TimeUnit.MILLISECONDS.sleep(400);
 				System.out.println(Thread.currentThread()+" "+this);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
