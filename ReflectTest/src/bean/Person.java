@@ -5,16 +5,16 @@ public class Person {
 	public int age;
 	private String address;
 
-	public Person() {
+	public Person(){
 		System.out.println("空参数构造方法");
 	}
 
-	public Person(String name) {
+	public Person(String name)  throws Exception{
 		this.name = name;
 		System.out.println("带有String的构造方法");
 	}
 
-	public Person(String name, int age) {
+	private Person(String name, int age) {
 		this.name = name;
 		this.age = age;
 		System.out.println("带有String ,int的构造方法");
@@ -26,6 +26,14 @@ public class Person {
 		this.age = age;
 		this.address = address;
 		System.out.println("带有String,int,String的构造方法");
+	}
+	
+	public void method1() {
+		System.out.println("没有返回值没有参数的方法");
+	}
+	
+	public void method2(String name) {
+		System.out.println("没有返回值,有参数的方法   name= "+name);
 	}
 	
 	public int method3() {
