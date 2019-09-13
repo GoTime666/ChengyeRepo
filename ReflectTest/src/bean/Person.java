@@ -17,7 +17,7 @@ public class Person {
 	private Person(String name, int age) {
 		this.name = name;
 		this.age = age;
-		System.out.println("带有String ,int的构造方法");
+		System.out.println("带有String ,int的私有构造方法");
 	}
 
 	public static Person getInstance(String name, int age) {
