@@ -14,7 +14,6 @@ public class TicketNotSafe extends Ticket {
 					e.printStackTrace();
 				}
 				System.out.println(Thread.currentThread().getName() + "正在卖票:" + ticket--);
- 
 			} else {
 				return;
 			}

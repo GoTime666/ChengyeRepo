@@ -5,7 +5,8 @@ import java.util.concurrent.Executors;
 
 public class ThreadDemoRunnable {
 	public static void main(String[] args) {
-		ExecutorService service = Executors.newFixedThreadPool(4);
+		//ExecutorService service = Executors.newFixedThreadPool(4);
+		ExecutorService service = Executors.newCachedThreadPool();
 		// MyRunnable r=new MyRunnable();
 		Runnable r = new Runnable() {
 
@@ -16,6 +17,10 @@ public class ThreadDemoRunnable {
 					System.out.println(Thread.currentThread().getName() + "   " + i);
 			}
 		};
+		service.submit(r);
+		service.submit(r);
+		service.submit(r);
+		service.submit(r);
 		service.submit(r);
 		service.submit(r);
 		service.submit(r);
