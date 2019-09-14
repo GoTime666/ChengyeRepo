@@ -3,7 +3,6 @@ package reflect;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
-import bean.Person;
 
 public class GetInstance {
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
