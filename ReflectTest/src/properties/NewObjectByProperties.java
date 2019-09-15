@@ -8,12 +8,18 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
+import bean.Person;
+
 public class NewObjectByProperties {
-	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	public static void main(String[] args)
+			throws FileNotFoundException, IOException, ClassNotFoundException, NoSuchMethodException, SecurityException,
+			InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		Properties prop = new Properties();
+		Class<Person> c=Person.class;
+		
 		prop.load(new FileInputStream("src\\properties\\person.properties"));
 		String className = prop.getProperty("className");
-		String methodName=prop.getProperty("methodName");
+		String methodName = prop.getProperty("methodName");
 		System.out.println(className);
 
 		Class<?> class1 = Class.forName(className);
@@ -22,6 +28,6 @@ public class NewObjectByProperties {
 		Method method5 = class1.getDeclaredMethod(methodName);
 		method5.setAccessible(true);
 		method5.invoke(obj);
-		
+
 	}
 }
